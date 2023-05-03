@@ -74,7 +74,7 @@
 
         <TextBlock x:Name="SubtitleBlock" 
                    VerticalAlignment="Bottom" 
-                   Foreground="White"
+                   Foreground="black"
                    Background="#7F000000"
                    Padding="15"
                    Visibility="{Binding Path=SubTitleTextIsNotEmpty, Converter={StaticResource BooleanToVisibilityConverter}}"
@@ -92,7 +92,7 @@
         <!--WebBrowser browser Grid-->
         
         <Grid x:Name="BrowserGrid" 
-              Background="White" 
+              Background="black" 
               Opacity="0.0" 
               Focusable="True" MouseMove="BrowserGrid_MouseMove">
             <Grid.InputBindings>
@@ -122,7 +122,7 @@
             </Grid.RowDefinitions>-->
 
             <!--Actual web browser-->
-            <Grid Grid.Row="0" Background="White">
+            <Grid Grid.Row="0" Background="black">
                 <wpf:ChromiumWebBrowser 
                     x:Name="Browser" 
                     ZoomLevelIncrement="{Binding BrowserZoomLevelIncrement}"
